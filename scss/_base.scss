@@ -1,0 +1,7 @@
+$mb: 767px;
+
+@mixin mobile{
+    @media screen and (max-width:$mb){
+        @content;
+    }
+}

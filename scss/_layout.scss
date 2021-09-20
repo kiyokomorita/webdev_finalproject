@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-*
-{
+
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -120,6 +120,9 @@ hr{
     
     ul{
         text-align: center;
+        @include mobile{
+            display: none;
+        }
         
 
     li{
@@ -137,10 +140,8 @@ hr{
 }
 }
 
-// @media screen (max-width: 1283px) 
-// .top-bar{
-//     display: none;
-// }  
+
+
 
 #home{
     background-image:url("/img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg");
@@ -199,23 +200,7 @@ hr{
     }
     
 
-    // .card{
-    //     width: 50%;
-    //     height:100%;
-    //     position:relative;
-    //     background-color: #FFDDDD;
-    //     overflow:hidden;
-    //     object-fit: cover;
-    //     // width: 200px;
-    //     // height:200px;
-    //     // overflow: hidden;
-    //     // object-fit: cover;
-
-    //     img{
-    //         width: 100%;
-    //         height: 100%;
-
-    //     }
+    
 
             p{
             text-align: center;
@@ -224,31 +209,7 @@ hr{
     }
 }
 
-// .category-list{
-//     margin:50px 50px;
-//     list-style: none;
-//     display: flex;
-//     flex-wrap: wrap;
-    
-    // li{
-    //     flex: auto;
-    //     width: 50%;
-        // margin-right:20px;
 
-        // img{
-        //     height: 238px;
-        //     width: auto;
-            
-        // }
-        // img{
-        //     height: 100%;
-        //     width: auto;
-        // }
-
-            
-
-    // }
-// }
 }
 
 #popular{
@@ -258,6 +219,11 @@ hr{
 .review{
     display: flex;
     background-color: white;
+
+    @include mobile{
+        display: inline-block;
+        align-content: center;
+    }
     
     
 .review-left{
@@ -265,12 +231,23 @@ hr{
     width: 50%;
     position: relative;
     flex-direction: column;
+    // align-items: center;
+
+    @include mobile{
+        align-items: center;
+        width: 100%;
+    }
    
 
     .review-img{
       width: 280px;
       height: auto;
-        margin-left: 150px;
+      margin-left: 150px;
+      position: relative;
+      align-items: center;
+
+      
+      
     }
     
 }
@@ -281,6 +258,12 @@ hr{
     flex-direction: column;
     color: white;
     text-align: center;
+
+    @include mobile{
+        align-items: center;
+        width: 100%;
+    }
+    
 
 
         h2{
@@ -308,6 +291,8 @@ hr{
 }
 
 }
+
+
 
 .contact{
     padding: 120px 0;
@@ -347,9 +332,7 @@ hr{
 footer{
     background-color: #FFDDDD;
 }
-/* .footer-one{
-    color: white;
-} */
+
 footer h5{
     color:#d8d8d8;
     font-weight: 700;
@@ -368,10 +351,7 @@ footer li a{
     font: size 0.8rem;
     color:white;
 }
-/* footer li a:hover{
-    color:#d8d8d8
 
-} */
 footer p{
     color: white;
     font-size:0.8rem;
@@ -385,8 +365,7 @@ footer .sns a{
     background-color: white;
     display:inline-block;
    
-    /* justify-content: space-between; */
-    /* float: left; */
+   
     
     text-align: center;
     line-height: 38px;
