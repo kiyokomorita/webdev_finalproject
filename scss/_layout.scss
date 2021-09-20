@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins';
+
+h1{
+    font: size 2.5rem;
+    font-weight: 700;
+    // font-family: "Poppins";
+}
+h2{
+    font: size 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    columns: #1d1d1d;
+}
+h6{
+    columns: #d8d8d8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    outline:none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    margin-left: 50px;
+}
+
+button:hover{
+    background-color: black;
+}
+hr{
+    width: 100px;
+    height:2px;
+    background-color: orange;
+}
+
+
+
+    .navbar{
+        font: size 16px;
+        top:0;
+        left:0;
+    
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    // color:black;
+    // color:red;
+    // border:none;
+
+    transition: 0.3s ease;
+}
+
+
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: coral;
+
+    
+}
+
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus{
+        background-color: white;
+    }
+}
+
+
+/* mobile nav */
+.navbar-light .navbar-toggler{
+    border:none;
+    outline:none;
+}
+
+
+.navbar-right{
+    color:pink;
+    
+   input{
+       border-radius: 50px;
+       border:1px solid pink;
+   }
+}
+
+
+.top-bar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    margin-top:70px;
+    
+    ul{
+        text-align: center;
+        
+
+    li{
+        float: left;
+        list-style: none;
+        margin:25px 30px;
+        display: inline-block;
+
+    }
+    a{
+        color: white;
+    }
+    
+   
+}
+}
+
+// @media screen (max-width: 1283px) 
+// .top-bar{
+//     display: none;
+// }  
+
+#home{
+    background-image:url("/img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg");
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // .top-text-wrapper{
+    //     font-size; 10px;
+    // }
+}
+
+
+.category{
+    background-color: #FFDDDD;
+
+.card-wrapper{
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // height:100vh;
+    border: none;
+
+    .inner-section{
+        // border:1px solid red;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: #FFDDDD;
+        
+
+        .card{
+            width: 50%;
+            height:100%;
+            position:relative;
+            background-color: #FFDDDD;
+            overflow:hidden;
+            object-fit: cover;
+            border: none;
+            // width: 200px;
+            // height:200px;
+            // overflow: hidden;
+            // object-fit: cover;
+    
+            img{
+                width: 100%;
+                height: 100%;
+    
+            }
+    }
+    
+
+    // .card{
+    //     width: 50%;
+    //     height:100%;
+    //     position:relative;
+    //     background-color: #FFDDDD;
+    //     overflow:hidden;
+    //     object-fit: cover;
+    //     // width: 200px;
+    //     // height:200px;
+    //     // overflow: hidden;
+    //     // object-fit: cover;
+
+    //     img{
+    //         width: 100%;
+    //         height: 100%;
+
+    //     }
+
+            p{
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+}
+
+// .category-list{
+//     margin:50px 50px;
+//     list-style: none;
+//     display: flex;
+//     flex-wrap: wrap;
+    
+    // li{
+    //     flex: auto;
+    //     width: 50%;
+        // margin-right:20px;
+
+        // img{
+        //     height: 238px;
+        //     width: auto;
+            
+        // }
+        // img{
+        //     height: 100%;
+        //     width: auto;
+        // }
+
+            
+
+    // }
+// }
+}
+
+#popular{
+    background-color: white;
+}
+
+.review{
+    display: flex;
+    background-color: white;
+    
+    
+.review-left{
+    background-color: #FFDDDD;
+    width: 50%;
+    position: relative;
+    flex-direction: column;
+   
+
+    .review-img{
+      width: 280px;
+      height: auto;
+        margin-left: 150px;
+    }
+    
+}
+.review-right{
+    background-color: #FFB8B8;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+
+        h2{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        p{
+            margin:20px 50px;
+
+            .review-right-img{
+                
+                 width: 78px;
+                 height: 79px;
+                 margin-top:30px;
+             }
+            
+        }
+
+        
+        
+
+    
+
+}
+
+}
+
+.contact{
+    padding: 120px 0;
+    
+
+    h2{
+        font-size: 48px;
+        font-weight: 500;
+        
+    }
+    
+
+    .contact-form{
+        margin-top: 50px;
+        padding-left: 135px;
+        padding-right: 135px;
+
+        
+        button{
+            margin-left: 10px;
+            margin-right:10px;
+            width: 100%;
+            background-color:#db6260; 
+            border-color:#db6260;
+            color: white;
+            border-radius: 50px;
+            display: inline-block;
+        }
+       
+    }
+}
+
+
+
+
+
+footer{
+    background-color: #FFDDDD;
+}
+/* .footer-one{
+    color: white;
+} */
+footer h5{
+    color:#d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+footer h6{
+    color:white;
+    font-size:1rem;
+}
+
+footer li{
+    padding-bottom:4px;
+}
+footer li a{
+    font: size 0.8rem;
+    color:white;
+}
+/* footer li a:hover{
+    color:#d8d8d8
+
+} */
+footer p{
+    color: white;
+    font-size:0.8rem;
+
+}
+
+footer .sns a{
+    color:#000;
+    width: 38px;
+    height:38px;
+    background-color: white;
+    display:inline-block;
+   
+    /* justify-content: space-between; */
+    /* float: left; */
+    
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin:0 5px;
+    
+}
+
+footer .copyright{
+    text-align: center;
+    color:white;
+    transition: 0.3s all;
+}
+
+
+
+// CSS HTMLの上にある<Style>からコピー
+    
+    #home > div > div{
+      /* font-style: italic; */
+      font-family:'Times New Roman', Times, serif;
+      width: 300px;
+      color: aliceblue;
+    }
+      .top-text{
+        font-style: italic;
+        font-family:monospace;
+        font-weight: 200;
+        color: aliceblue;
+      }
+      /* #new-arrival > div.row.mx-auto.container-fluid >div:nth-child(1)> a{ */
+       
+        #new-arrival > div.row.mx-auto.container-fluid >div> a{
+  
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline:none;
+    border:none;
+    background-color: #fb77fb;;
+    color:aliceblue;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    
+    
+  }
+  #popular > div.row.mx-auto.container-fluid{
+
+  }
+  #popular > div.row.mx-auto.container-fluid > div:nth-child(n) > a{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline:none;
+    border:none;
+    background-color: #fb77fb;;
+    color:aliceblue;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    
+  }
+
+
+
+
+
